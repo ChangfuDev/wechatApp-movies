@@ -1,0 +1,68 @@
+/* pages/posts/post-detail/post-detail.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+
+}
+.post_banner {
+    width: 750rpx;
+    height: 480rpx;
+}
+.music {
+    width: 110rpx;
+    height: 120rpx;
+    position: absolute;
+    left: 50%;
+    margin-left: -55rpx;
+    top: 170rpx;
+    opacity: 0.6;
+}
+.user-time {
+    margin: 27rpx 0 45rpx 40rpx;
+
+}
+.avatar {
+    margin-right: 22rpx; 
+    height: 150rpx;
+    width: 150rpx;
+    vertical-align: middle;
+}
+.name {
+    margin-right: 30rpx; 
+    font-size: 20px;
+}
+.article-title text {
+    margin-left: 10rpx;
+    font-size: 28px;
+    Letter-spacing:4px;
+}
+.tool {
+    margin-top:50rpx;
+}
+.circle-img {
+    float: right;
+    vertical-align: middle;
+}
+.circle-img image {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 10rpx 0 10rpx;
+}
+.horizon {
+    vertical-align: middle;
+    position: relative;
+    top: 30rpx;
+    margin: 0 auto;
+    z-index: -99;
+    width: 660rpx;
+    height: 2rpx;
+    background-color: #e5e5e5;
+}
+.content {
+    color: #666;
+    margin: 20rpx 0 0 10rpx;
+    line-height: 44rpx;
+    letter-spacing: 2;
+    text-indent: 32px;
+}

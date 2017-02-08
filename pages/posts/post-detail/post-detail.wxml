@@ -1,0 +1,27 @@
+<!--pages/posts/post-detail/post-detail.wxml-->
+<view class="container">
+    <!--<image class="post_banner" src="{{isPlaymusic ?postdata.music.coverImgUrl : postdata.post_banner}}"></image>-->
+    <image class="post_banner" src="{{postdata.post_banner}}"></image>
+    <image catchtap="onMusic" class="music" src="{{isPlaymusic ? '/images/icon/music-stop.png' :'/images/icon/music-start.png'}}"></image>
+    <view class="user-time">
+        <image class="avatar" src="{{postdata.img.avatar}}"></image>
+        <text class="name">{{postdata.usName}}</text>
+        <text >发表于{{postdata.time}}</text>
+    </view>
+    <view class="article-title">
+            <text>{{postdata.title}}</text>
+    </view>
+    <view class="tool">
+        <view class="circle-img">
+            <image wx:if="{{collected}}" catchtap="onCash" src="/images/icon/star.png"></image>
+            <image wx:else catchtap="onCash" src="/images/icon/star1.png"></image>
+            <image catchtap="onShare" class="share" src="/images/icon/share.png"></image>
+        </view>
+        <view class="horizon"></view>
+    </view>
+    <view class="content">
+        <text> {{postdata.detail}}
+        </text>
+    </view>
+    
+</view>

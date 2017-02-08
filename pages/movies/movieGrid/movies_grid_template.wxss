@@ -1,0 +1,12 @@
+@import "/pages/movies/movie/movie_template.wxss";
+
+.mGrid-container {
+    height: 1300rpx;
+    padding: 15rpx; 
+}
+.mGrid-movie {
+    float: left;
+}
+.movie_container {
+    margin: 0 20rpx; 
+}

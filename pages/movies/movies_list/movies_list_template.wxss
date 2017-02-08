@@ -1,0 +1,25 @@
+@import "/pages/movies/movie/movie_template.wxss";
+.mList-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30rpx;
+    margin: 30rpx 0;
+    background: white;
+}
+
+.mList-class text {
+    vertical-align: middle;
+}
+.mlist-more {
+    float: right;
+}
+.mlist-more image {
+    width: 9rpx;
+    height: 16rpx;
+    margin: 0 10rpx 0 10rpx; 
+}
+.mList-movie {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+}

@@ -1,0 +1,15 @@
+<import src="movies_list/movies_list_template.wxml" />
+<import src="movieGrid/movies_grid_template.wxml" />
+<view class="search-view">
+  <icon class="search" type="search" size="20" color="gray"></icon>
+  <input class="search-input" type="text" placeholder="{{popuSearch}}" maxlength="50" bindfocus="searchFocusTap"  bindconfirm="searchConfirmTap" focus="{{focus}}" />
+  <icon class="search-close" wx:if="{{MSearchShow}}" bindtap="searchCloseTap" type="cancel" size="25" color="gray" ></icon>
+</view>
+<view class="Mlist" wx:if="{{MlistShow}}">
+  <template is="movies-list" data="{{...intheaters}}" />
+  <template is="movies-list" data="{{...comingsoon}}" />
+  <template is="movies-list" data="{{...top250}}" />
+</view>
+<view class="search-panal" wx:elif="{{MSearchShow}}">
+  <template is="movies-grid" data= "{{...searchResult}}"/>
+</view>

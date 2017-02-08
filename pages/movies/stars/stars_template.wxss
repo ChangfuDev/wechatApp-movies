@@ -1,0 +1,18 @@
+.star-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+}
+
+.star-images {
+  display: flex;
+  flex-direction: row;
+  height: 17rpx;
+  margin-right: 34rpx;
+  margin-top: 4px;
+}
+
+.star-images image {
+  width: 17rpx;
+  height: 17rpx;
+}

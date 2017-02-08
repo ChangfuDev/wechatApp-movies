@@ -1,0 +1,13 @@
+/* pages/posts/post.wxss */
+@import "post_item/post_item_template.wxss";
+/*引入复用的模板样式*/
+page {
+    background-color: #ededed;
+}
+swiper {
+    width:750rpx;
+    height:500rpx;
+}
+.banner {
+    width:100%;
+}

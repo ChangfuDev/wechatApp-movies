@@ -1,0 +1,32 @@
+<import src="post_item/post_item_template.wxml" />
+<!--引入复用的模板框架-->
+<view>
+    <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{post_key}}">
+        <swiper-item  wx:if="{{item.isBanner}}" catchtap = "onPostTap" data-postId="{{item.postId}}" >
+            <image  class="banner" src="{{item.img.bannerImg}}" />
+        </swiper-item>
+    </block>
+    </swiper>
+    <block wx:for="{{post_key}}"  wx:for-item="item" >
+        <view catchtap = "onPostTap" data-postId="{{item.postId}}">
+            <template is="post-item" data="{{...item}}"/> 
+        </view>
+        <!--data-postId 输出到js的onPostTap方法中-->
+        <!--template实现模板的复用-->
+        <!--...item 此处的的...是将iten打开对象直接获取数值，
+        因  此在template里，{{item.usName}}就可以不用item.
+        而直接使用{{usName}}-->
+        
+    </block>
+</view>
+
+
+
+
+ <!--block 与{{item}}的关系？？？-->
+    <!--block 仅仅常用以wx:for的容器标签，wx:for为for循环获取数据-->
+    <!--完整版为<block wx:for="{{imgUrls}}" wx:for-item="item" wx:for-index="index"> -->
+    <!--item表示imgUrls数组的子元素，默认为item，故wx:for-item="item"可以省略不写-->
+    <!--index表示imgUrls数组的子元素的编号（0、1、2.....），默认为index，故wx:for-index="index"可以省略不写-->

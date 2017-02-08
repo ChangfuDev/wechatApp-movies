@@ -1,0 +1,16 @@
+<view class="container">
+    <image class="user-avatar" src="/images/ansheng.png" ></image>
+    <text class="user-name">Hello，安生</text>
+    <!--<text class="user-name"><text style="color:red;">Hello</text>，安生</text>-->
+    <!--目前版本已可以实现嵌套-->
+    <view class="moto-border" bindtap="toIndex">
+        <text class="moto" >开启安生之旅</text>
+    </view>
+    <!--<view class="moto-border" bindtap="toIndex">
+        <text class="moto" catchtap="Text>开启安生之旅</text>
+    </view>-->
+    <!--bindtap 与catchtap事件的区别：-->
+    <!--如果子元素中使用bindtap事件，那么单击子元素触发该事件的同时也会触发父元素的事件-->
+    <!--但如果子使用catchtap事件，那么单击子元素触发事件的时候就不会触发到父元素的事件'-->
+
+</view>

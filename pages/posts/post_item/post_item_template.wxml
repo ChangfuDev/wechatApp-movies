@@ -1,0 +1,25 @@
+<template name="post-item">
+    <view class="list-content">
+            <view class="post-imdata">
+                <image wx:if="{{img_condition}}" class="user-img" src="{{img.avatar}}"></image>
+                <view class="name-data">
+                    <text class="user-name">{{usName}}</text>
+                    <!--<text class="user-name">{{"hello" + usName}}</text>-->  
+                    <!--花括号里边可以做运算-->
+                    <text class="time small">{{time}}</text>
+                </view>
+            </view>
+            <view class="imgTitle">
+                <image class="post-img" src="{{img.imgSrc}}"></image>
+                <text class="postItem-title">{{title}}</text>
+            </view>
+            
+            <text class="new-content">{{detail}}</text>
+            <view>
+                    <image class="icon" src="/images/icon/live.png"></image>
+                    <text class="small">{{collect}}</text>
+                    <image class="icon" src="/images/icon/content.png"></image>
+                    <text class="small">{{view}}</text>
+            </view>
+        </view>
+</template>
